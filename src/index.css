@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans;
+  }
+}
+
+.markdown-body {
+  @apply text-slate-800 leading-relaxed;
+}
+.markdown-body h1 { @apply text-3xl font-bold mt-8 mb-4; }
+.markdown-body h2 { @apply text-2xl font-semibold mt-6 mb-3; }
+.markdown-body h3 { @apply text-xl font-medium mt-4 mb-2; }
+.markdown-body p { @apply my-4; }
+.markdown-body ul { @apply list-disc pl-6 my-4; }
+.markdown-body ol { @apply list-decimal pl-6 my-4; }
+.markdown-body code { @apply bg-slate-100 px-1 rounded font-mono text-sm; }
+.markdown-body pre { @apply bg-slate-900 text-slate-50 p-4 rounded-lg my-6 overflow-x-auto font-mono; }
+.markdown-body blockquote { @apply border-l-4 border-slate-300 pl-4 italic my-4; }
+
